@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="데이터 사이언티스트 지훈의 포트폴리오. 실험 설계부터 모델 배포까지, 팀이 바로 쓰는 분석을 만듭니다."
+    />
+    <title>지훈 - 데이터 사이언티스트</title>
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=ibm-plex-sans:400,500,600|outfit:400,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@phosphor-icons/web@2.1.2/src/regular/style.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="logo" href="#top" aria-label="지훈 홈">
+          <span class="logo-mark" aria-hidden="true">J</span>
+          <span class="logo-word">지훈</span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="주요">
+          <a href="#work">작업 보기</a>
+          <a href="#contact">연락하기</a>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="icon-btn"
+            type="button"
+            data-theme-toggle
+            aria-label="화면 모드 바꾸기"
+          >
+            <i class="ph ph-sun" data-theme-icon-light aria-hidden="true"></i>
+            <i class="ph ph-moon" data-theme-icon-dark aria-hidden="true"></i>
+          </button>
+          <button
+            class="icon-btn menu-toggle"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            aria-label="메뉴 열기"
+          >
+            <i class="ph ph-list" data-menu-open-icon aria-hidden="true"></i>
+            <i class="ph ph-x" data-menu-close-icon aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobile-nav" data-mobile-nav hidden>
+      <nav class="mobile-nav-links" aria-label="모바일">
+        <a href="#work">작업 보기</a>
+        <a href="#contact">연락하기</a>
+      </nav>
+    </div>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="hero-kicker">데이터 사이언티스트</p>
+            <h1 id="hero-title">쓸 수 있는 분석을 만듭니다</h1>
+            <p class="hero-lede">
+              실험 설계, 모델, 대시보드까지. 팀이 다음날 바로 움직이는 결과를
+              남깁니다.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#work">작업 보기</a>
+              <a class="btn btn-ghost" href="#contact">연락하기</a>
+            </div>
+          </div>
+
+          <figure class="hero-media">
+            <img
+              src="assets/hero-workspace.jpg"
+              alt="창가 책상에 노트북과 노트가 놓인 작업 공간"
+              width="1600"
+              height="1200"
+              fetchpriority="high"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="work" id="work" aria-labelledby="work-title">
+        <div class="container">
+          <h2 id="work-title">최근 작업</h2>
+          <p class="section-lede">
+            이탈, 수요, 리뷰. 현업에서 바로 쓰인 세 가지 분석입니다.
+          </p>
+
+          <div class="project-grid">
+            <article class="project-card project-card-featured">
+              <div class="project-media">
+                <img
+                  src="assets/project-churn.jpg"
+                  alt="해질녘 창가에 놓인 노트북"
+                  width="1600"
+                  height="900"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h3>구독 이탈 예측</h3>
+                <p>
+                  이탈 위험이 높은 고객을 2주 전에 찾아, 리텐션 팀이 먼저 움직일
+                  수 있게 했습니다.
+                </p>
+                <p class="project-meta">Python, XGBoost, SHAP</p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="assets/project-forecast.jpg"
+                  alt="정돈된 마트 채소 코너와 빈 카트"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h3>점포 수요 예측</h3>
+                <p>
+                  점포별 주간 발주량을 맞춰 결품과 폐기 사이의 균형을 잡았습니다.
+                </p>
+                <p class="project-meta">Prophet, SQL, Looker</p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="assets/project-reviews.jpg"
+                  alt="노트와 메모지가 놓인 나무 테이블"
+                  width="1200"
+                  height="900"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h3>리뷰 주제 분석</h3>
+                <p>
+                  수천 개의 리뷰에서 반복되는 불만과 칭찬을 주제로 묶었습니다.
+                </p>
+                <p class="project-meta">BERTopic, Python, Streamlit</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-wrap">
+          <h2 id="contact-title">연락하기</h2>
+          <p class="section-lede">
+            프로젝트나 협업을 이야기하고 싶다면 아래에 남겨 주세요.
+          </p>
+
+          <form class="contact-form" data-contact-form novalidate>
+            <div class="field">
+              <label for="name">이름</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                autocomplete="name"
+                required
+                minlength="2"
+              />
+              <p class="field-hint">두 글자 이상 적어 주세요.</p>
+              <p class="field-error" data-error-for="name" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="email">이메일</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                inputmode="email"
+                required
+              />
+              <p class="field-hint">답장 받을 주소를 적어 주세요.</p>
+              <p class="field-error" data-error-for="email" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="message">메시지</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                minlength="10"
+              ></textarea>
+              <p class="field-hint">하고 싶은 이야기를 10자 이상 적어 주세요.</p>
+              <p class="field-error" data-error-for="message" hidden></p>
+            </div>
+
+            <button class="btn btn-primary" type="submit" data-submit>
+              보내기
+            </button>
+
+            <p class="form-status" data-form-status role="status" hidden></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>지훈, 데이터 사이언티스트</p>
+        <p>2026</p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
